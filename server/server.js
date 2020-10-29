@@ -13,6 +13,14 @@ let io = socketIO(server); // adding this will give access to the socket liberar
 
 app.use(express.static(publicPath));
 
+io.on('connection', (socket)=>{
+    console.log('A New user just connect');
+
+    socket.on('disconnect', ()=>{
+        console.log('disconnected from server');
+    })
+})
+
 server.listen(port, ()=>{
     console.log(`Server is uo on port ${port}`);
 })
