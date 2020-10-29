@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to gnu chat app</title>
-</head>
-<body>
-    <h1>GNU Chat App</h1>
-    <h5>The chating app is comming soon</h5>
-    <p>Welcome to chat app</p>
-    
-    <!--======================= all the java script there ============================-->
-    <script src="http://localhost/socket.io/socket.io.js"></script>
-    <script type="text/javascript">
-        let socket = io();
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to gnu chat app</title>
 
-        socket.on('connect', ()=>{
-            console.log('connected to server');
-        })
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-        socket.on('disconnect', ()=>{
-            console.log('disconnected from server');
-        })
-    </script>
-</body>
+    <body>
+        <h1 class="sasa">GNU Chat App</h1>
+        <img src="image/ganpat.png" alt="ganpat univeristy logo">
+        <br>
+        <img src="image/ibm.png" alt="IBM logo" height="160px">
+        <h5>The chating app is comming soon</h5>
+        <p>Welcome to chat app</p>
+
+        
+        <!-- ======================= all the java script there ============================ -->
+        <script src="http://localhost/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script type="text/javascript">
+            let socket = io();
+
+            socket.on('connect', function(){
+                console.log('connected to server');
+            });
+
+            socket.on('disconnect', function(){
+                console.log('disconnected from server');
+            });
+        </script> -->
+    </body>
 </html>
