@@ -1,45 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to gnu chat app</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Join | ChatApp</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="centered-form">
+    <div class="centered-form__form">
+      <form action="/chat.html">
+        <div class="form-field"><h3>Join Chat</h3></div>
+        <div class="form-field">
+          <label>Display name</label>
+          <input type="text" name="name" autofocus>
+        </div>
+        <div class="form-field">
+          <label>Room name</label>
+          <input type="text" name="room" autofocus>
+        </div>
+        <div class="form-field">
+          <button>Join</button>
+        </div>
+      </form>
+    </div>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-        <p>Welcome to chat app</p>
-
-        <form action="" id="message-form">
-            <input type="text" name="message" placeholder="Enter your message">
-
-            <button type="submit" id="submit-btn">Send</button>
-        </form>
-
-        
-        <!-- ======================= all the java script there ============================ -->
-        <script src="http://localhost/socket.io/socket.io.js"></script>
-        <script src="js/main.js"></script>
-        <!-- <script type="text/javascript">
-            let socket = io();
-
-            socket.on('connect', function() {
-                console.log('connected to server');
-
-                    // socket.emit('createMessage', {
-                    //     from: "yash",
-                    //     text: "Whats up ?!!"
-                    // })
-            });
-
-            socket.on('disconnect', function(){
-                console.log('disconnected from server');
-            });
-
-            socket.on('newMessage',  function(message) {
-                console.log("newMessage", message);
-            });
-        </script> -->
-    </body>
+  </body>
 </html>
