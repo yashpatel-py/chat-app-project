@@ -8,7 +8,7 @@ const {isRealString} = require('./utils/isRealString');
 const {Users} = require('./utils/users');
 
 const publicPath = path.join(__dirname, '/../public');
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 80
 let app = express();
 let server = http.createServer(app);
 let io = socketIO(server);

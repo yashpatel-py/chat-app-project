@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Grandstander:ital,wght@1,400;1,900&display=swap');
 button,
 button:hover {
     border: none;
@@ -77,6 +78,8 @@ button:disabled {
 
 .join {
     margin-top: 30px;
+    font-family: 'Grandstander', cursive;
+    font-size: 40px;
 }
 
 .form-field label {
@@ -196,4 +199,13 @@ button:disabled {
     .chat__footer button {
         margin-right: 0
     }
+}
+
+.inputss{
+    border-radius: 50px;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
 }
