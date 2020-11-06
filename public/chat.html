@@ -12,9 +12,13 @@
     <div class="chat__sidebar">
       <h3>People</h3>
       <div id="users"></div>
+
+      <a href="index.html" class="leave" role="button"><span>Leave Room </span></a>
     </div>
 
     <div class="chat__main">
+      <a href="aboutus.html" class="aboutusbutton" target="_blank">About Us</a>
+
       <ol id="messages" class="chat__messages"></ol>
 
       <div class="chat__footer">
@@ -45,7 +49,7 @@
           <span>{{createdAt}}</span>
         </div>
         <div class="message__body">
-          <a href="{{url}}" target="_blank">My current location</a>
+          <a href="{{url}}" class="locations" target="_blank" role="button">My current location</a>
         </div>
       </li>
     </script>
