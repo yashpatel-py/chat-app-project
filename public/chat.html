@@ -39,7 +39,8 @@
 
       <!-- send message and send location buttons -->
       <form id="message-form">
-        <input name="message" id="myText" type="text" placeholder="Message" autofocus autocomplete="off" />
+        <input name="message" id="myText" type="text" placeholder="Message" onfocus="this.value=''"
+          autocomplete="off" />
         <button id="submit-btn">Send</button>
       </form>
       <button id="send-location">Send location</button>
