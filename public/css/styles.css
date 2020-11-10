@@ -162,17 +162,17 @@ button:disabled {
 }
 
 .message {
-    padding: 10px
+    padding: 2px
 }
 
 .message__title {
     display: flex;
-    margin-bottom: 5px
 }
 
 .message__title h4 {
     font-weight: 600;
-    margin-right: 10px
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .message__title span {
