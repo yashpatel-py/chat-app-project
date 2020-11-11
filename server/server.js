@@ -1,5 +1,5 @@
 
-// all the requiesd are here
+// all the requiesd packages are here
 const path = require('path');
 const http = require('http');
 const express = require('express');
@@ -41,7 +41,6 @@ io.on('connection', (socket) => {
     socket.emit('newMessage', generateMessage('Admin', `Welocome to ${params.room}!`));
 
     socket.broadcast.to(params.room).emit('newMessage', generateMessage('Admin', "New User Joined!"));
-
     callback();
   })
 

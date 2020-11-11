@@ -4,6 +4,7 @@ function scrollToBottom() {
   let messages = document.querySelector('#messages').lastElementChild;
   messages.scrollIntoView();
 }
+
 // when the new person is joined
 socket.on('connect', function () {
   let searchQuery = window.location.search.substring(1);
@@ -76,6 +77,7 @@ socket.on('newLocationMessage', function (message) {
   scrollToBottom();
 });
 
+// when user click 
 document.querySelector('#submit-btn').addEventListener('click', function (e) {
   e.preventDefault();
 
